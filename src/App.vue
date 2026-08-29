@@ -1,10 +1,12 @@
 <script setup>
 import TheWelcome from './components/TheWelcome.vue'
+import logo from '../public/logoSVG.svg'
+
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="../public/logoSVG.svg" width="125" height="125" />
+    <img :src="logo" />
   </header>
 
   <main>
