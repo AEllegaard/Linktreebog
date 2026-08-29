@@ -11,12 +11,12 @@ import TheWelcome from './components/TheWelcome.vue'
     </div>
     <div class="hbottom">
       <h2>plot_twist_society.info</h2>
+      <p>Welcome!</p>
     </div>
     
   </header>
   
   <main>
-    <img width="10%" src="/src/assets/LogoSVG.svg" />
     <TheWelcome />
   </main>
 </template>

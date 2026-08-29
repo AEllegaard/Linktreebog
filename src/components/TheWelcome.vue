@@ -9,58 +9,59 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
 </script>
 
 <template>
-  <div class="titles">
-    <h1 class="title">Velkommen til!</h1>
-  </div>
-  <div class="buttonsection">
-    <div class="inner">
-      <button>Instagram</button>
-      <button>Instagram</button>
-
+  <div class="profile-wrapper">
+    <div class="center-logo">
+      <img src="/src/assets/LogoSVG.svg" alt="logo" />
     </div>
+
+    <div class="file-button fb1">Instagram</div>
+    <div class="file-button fb2">Portfolio</div>
+    <div class="file-button fb3">Kontakt</div>
+    <div class="file-button fb4">Om mig</div>
+    <div class="file-button fb5">CV</div>
+    <div class="file-button fb6">Projekter</div>
   </div>
 </template>
 
+
 <style scoped>
-.title {
-  font-family: nightfall;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.profile-wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 4rem auto;
 }
 
-.titles {
-width: 100%;
-display: flex;
-justify-content: center;
-margin-top: 2rem;
+.center-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.buttonsection {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.center-logo img {
+  width: 300px;
 }
 
-.inner {
-width: 20%;
-display: flex;
-justify-content: center;
-flex-direction: column;
-margin: 1rem;
-}
-
-button {
-  background-color: #D12427;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 1rem;
-  margin: 0.5rem;
-  cursor: pointer;
-  font-size: 1rem;
+.file-button {
+  position: absolute;
+  background: #fff;
+  border: 2px solid #D12427;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
   font-family: pt sans;
   font-weight: 700;
-  margin-bottom: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+/* Positions around the circle */
+.fb1 { top: 0%; left: 50%; transform: translateX(-50%); }
+.fb2 { top: 15%; left: 85%; transform: translate(-50%, -50%); }
+.fb3 { top: 50%; left: 100%; transform: translate(-50%, -50%); }
+.fb4 { top: 85%; left: 85%; transform: translate(-50%, -50%); }
+.fb5 { top: 100%; left: 50%; transform: translate(-50%, -100%); }
+.fb6 { top: 50%; left: 0%; transform: translate(-50%, -50%); }
+
 
 </style>
