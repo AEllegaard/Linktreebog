@@ -4,7 +4,7 @@ import TheWelcome from './components/TheWelcome.vue'
 
 <template>
   <header>
-    <img src="/logoSVG.svg" />
+    <img src="/src/assets/LogoSVG.svg" />
   </header>
 
   <main>
