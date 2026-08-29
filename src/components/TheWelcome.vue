@@ -53,7 +53,7 @@ button {
   background-color: #D12427;
   color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 1rem;
   margin: 0.5rem;
   cursor: pointer;
