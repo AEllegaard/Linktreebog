@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F7F1EA;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header img{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-sans-regular-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-sans-bold-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: nightfall; /* set name */
+  src: url(/public/fonts/nightfall-westlight-font/nightfallwestlight-regular.otf); /* url of the font */
+}
+
+h1{
+  color: #D12427;
+}
