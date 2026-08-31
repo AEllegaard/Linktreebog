@@ -42,7 +42,7 @@ margin-top: 3rem;
 }
 
 .inner {
-min-width: 30%;
+min-width: 40%;
 display: flex;
 justify-content: center;
 flex-direction: column;
