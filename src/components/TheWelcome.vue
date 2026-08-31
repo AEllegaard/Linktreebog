@@ -14,9 +14,8 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
   </div>
   <div class="buttonsection">
     <div class="inner">
-      <button>Instagram</button>
-      <button>Instagram</button>
-
+      <a class="button" href="https://www.instagram.com/plottwistsociety_/">Instagram</a>
+      <a class="button" href="/PlotTwistSociety_Info.pdf" download>Information</a>
     </div>
   </div>
 </template>
@@ -50,7 +49,7 @@ flex-direction: column;
 margin: 1rem;
 }
 
-button {
+.button {
   background-color: #D12427;
   color: #fff;
   border: none;
@@ -62,6 +61,8 @@ button {
   font-family: PT Sans;
   font-weight: 700;
   margin-bottom: 1rem;
+  text-decoration: none;
+  text-align: center;
 }
 
 </style>
