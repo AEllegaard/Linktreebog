@@ -31,18 +31,18 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
 width: 100%;
 display: flex;
 justify-content: center;
-margin-top: 2rem;
+margin-top: 3rem;
 }
 
 .buttonsection {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .inner {
-width: 20%;
+min-width: 30%;
 display: flex;
 justify-content: center;
 flex-direction: column;
