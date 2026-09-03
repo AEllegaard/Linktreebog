@@ -18,9 +18,59 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
       <a class="button" href="/PlotTwistSociety_Info.pdf" download>Information</a>
     </div>
   </div>
+  <div class="decor">
+  <img class="p1" src="/polaroid_bogklubben.png" alt="">
+  <img class="p2" src="/polaroid_bogklubben.png" alt="">
+  <img class="p3" src="/polaroid_bogklubben.png" alt="">
+  <img class="p4" src="/polaroid_bogklubben.png" alt="">
+</div>
+
 </template>
 
 <style scoped>
+.decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* så de ikke blokerer klik */
+}
+
+/* Eksempel på 4 billeder placeret “tilfældigt” */
+.p1 {
+  position: absolute;
+  width: 12vw;
+  top: 10vh;
+  left: 5vw;
+  transform: rotate(-5deg);
+}
+
+.p2 {
+  position: absolute;
+  width: 10vw;
+  top: 30vh;
+  right: 8vw;
+  transform: rotate(8deg);
+}
+
+.p3 {
+  position: absolute;
+  width: 8vw;
+  bottom: 15vh;
+  left: 12vw;
+  transform: rotate(-12deg);
+}
+
+.p4 {
+  position: absolute;
+  width: 14vw;
+  bottom: 5vh;
+  right: 10vw;
+  transform: rotate(4deg);
+}
+
+
 .title {
   font-family: nightfall;
   font-size: 2rem;
