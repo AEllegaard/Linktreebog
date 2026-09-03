@@ -19,9 +19,9 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
     </div>
   </div>
   <div class="decor">
-  <img class="p1" src="/polaroid_bogklubben.png" alt="">
-  <img class="p2" src="/polaroid_bogklubben.png" alt="">
-  <img class="p3" src="/polaroid_bogklubben.png" alt="">
+    <img class="p1" src="/kreabogklub.png" alt="">
+  <img class="p2" src="/event.png" alt="">
+  <img class="p3" src="/cat.png" alt="">
   <img class="p4" src="/polaroid_bogklubben.png" alt="">
 </div>
 
@@ -41,6 +41,7 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
 .p1 {
   position: absolute;
   width: 12vw;
+  min-width: 100px; /* sikrer at de aldrig bliver for små */
   top: 10vh;
   left: 5vw;
   transform: rotate(-5deg);
@@ -49,15 +50,17 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
 .p2 {
   position: absolute;
   width: 10vw;
+  min-width: 100px; /* sikrer at de aldrig bliver for små */
   top: 30vh;
-  right: 8vw;
+  right: 5vw;
   transform: rotate(8deg);
 }
 
 .p3 {
   position: absolute;
   width: 8vw;
-  bottom: 15vh;
+  min-width: 120px; /* sikrer at de aldrig bliver for små */
+  bottom: 20vh;
   left: 12vw;
   transform: rotate(-12deg);
 }
@@ -65,8 +68,9 @@ const openReadmeInEditor = () => fetch('/__open-in-editor?file=README.md')
 .p4 {
   position: absolute;
   width: 14vw;
-  bottom: 5vh;
-  right: 10vw;
+  min-width: 200px; /* sikrer at de aldrig bliver for små */
+  bottom: 12vh;
+  right: 8vw;
   transform: rotate(4deg);
 }
 
